@@ -2,10 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="  w-screen bg-[#F5EEE9] h-[44rem] pt-10 lg:flex  2xl:h-full   ">
+    <div className="  w-screen bg-[#F5EEE9] max-h-[44rem] pt-10 lg:flex    ">
       {/* ----- Box-1 ----- */}
-      <div className="bg-[#F5EEE9] sm:text-center lg:w-1/2 lg:text-start lg:self-center xl:ml-25 2xl:ml-150  ">
-        <h1 className="Graphik text-[2.40rem] px-4 leading-11  lg:pr-20 xl:text-5xl xl:pr-22 2xl:text-6xl 2xl:pr-25 2xl:leading-16">
+      <div className="bg-[#F5EEE9] sm:text-center lg:w-1/2 lg:text-start lg:self-center xl:flex flex-col ">
+        <h1 className="Graphik text-[2.40rem] px-4 leading-11  lg:pr-20 xl:text-5xl xl:pr-22 ">
           Tools that cover{" "}
           <span className="sm:block lg:inline">
             <span className="text-[#12715B]">all aspects</span> of your growing
@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
 
         {/* ----- Input --------- */}
-        <div className="text-center mt-10 sm:flex items-center justify-center gap-3 lg:ml-5 2xl:ml-[-7em]">
+        <div className="text-center mt-10 sm:flex items-center justify-center gap-3 lg:ml-5 ">
           <input
             type="email"
             placeholder="Your Email.."
@@ -41,7 +41,7 @@ const Hero = () => {
       {/* ----- Box-2 ----- */}
       <div className="w-full h-full mt-10  ">
         <img
-          className="object-cover xl:w-[44rem] justify-self-end 2xl:w-full "
+          className="object-cover xl:w-[44rem] justify-self-end "
           src="https://lexend-nextjs.vercel.app/assets/images/template/hero-mockup.png"
           alt=""
         />
