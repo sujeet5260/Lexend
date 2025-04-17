@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="uc-navbar container mx-auto min-h-[4rem] flex justify-between items-center px-4 xl:justify-around ">
+    <div className=" bg-[#F5EEE9]">
+      <div className="uc-navbar container mx-auto bg-[#F5EEE9] min-h-[4rem] flex justify-between items-center px-4 lg:pt-3 xl:justify-around ">
       {/* Logo image  */}
       <div className="uc-navbar-left flex gap-16">
         <img
@@ -35,6 +36,7 @@ const Navbar = () => {
           Start free trial
         </button>
       </div>
+    </div>
     </div>
   );
 };
