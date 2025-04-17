@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('./assets/Fonts/Graphik-Semibold.ce13cf0d.woff2') format('truetype');
+  /* You can add more formats for browser compatibility if needed */
+}
+
+
+.Graphik{
+  font-family: 'Graphik', sans-serif;
+}
+body {
+  
+  background-color: #F5EEE9;
+}
+
+
