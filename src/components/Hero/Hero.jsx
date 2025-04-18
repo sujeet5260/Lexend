@@ -2,49 +2,52 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="  w-screen bg-[#F5EEE9] h-[44rem] pt-10 lg:flex  2xl:h-full   ">
-      {/* ----- Box-1 ----- */}
-      <div className="bg-[#F5EEE9] sm:text-center lg:w-1/2 lg:text-start lg:self-center xl:ml-25 2xl:ml-150  ">
-        <h1 className="Graphik text-[2.40rem] px-4 leading-11  lg:pr-20 xl:text-5xl xl:pr-22 2xl:text-6xl 2xl:pr-25 2xl:leading-16">
-          Tools that cover{" "}
-          <span className="sm:block lg:inline">
-            <span className="text-[#12715B]">all aspects</span> of your growing
-          </span>{" "}
-          business.
-        </h1>
-        <p className="text-gray-600  mt-6 sm:px-14 md:px-33 lg:p-0 lg:pr-0 text-lg ml-5 xl:w-full">
-          Say goodbye to the hassle of managing multiple software and tools for
-          different tasks. Lexend offers a comprehensive suite of tools that
-          cover all aspects of your business.
-        </p>
+    <div className="bg-[#F5EEE9] w-full overflow-hidden">
+      <div className="container mx-auto px-4 py-12 flex flex-col xl:flex-row xl:items-center xl:justify-between">
+        {/* ----- Content Section ----- */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-4xl leading-tight lg:text-7xl font-bold">
+            Tools that cover{" "}<br/>
+            <span className="sm:block lg:inline">
+              <span className="text-emerald-700">all aspects</span> of your growing
+            </span>{" "}
+            business.
+          </h1>
+          <p className="text-gray-600 mt-6 mx-auto sm:px-8 lg:px-0 lg:pr-12 text-lg max-w-2xl lg:max-w-none">
+            Say goodbye to the hassle of managing multiple software<br/> and tools for
+            different tasks. Lexend offers a comprehensive<br/> suite of tools that
+            cover all aspects of your business.
+          </p>
 
-        {/* ----- Input --------- */}
-        <div className="text-center mt-10 sm:flex items-center justify-center gap-3 lg:ml-5 2xl:ml-[-7em]">
-          <input
-            type="email"
-            placeholder="Your Email.."
-            className="bg-white w-[90%] h-12 border-gray-500 rounded-md  pl-10 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] sm:w-99 md:w-80 lg:w-60  xl:w-90"
-          />
-          <button className="w-[90%] bg-[#0F604D] mt-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]  text-white font-semibold  h-12 rounded-md  sm:w-25 md:w-40 xl:text-sm xl:w-35 ">
-            <span className="md:hidden">Sing up</span>
-            <span className="hidden md:inline">Try it out for free</span>
-          </button>
+          {/* ----- Input Form ----- */}
+          <div className="mt-10 flex flex-col sm:flex-row items-center sm:justify-center lg:justify-start gap-3">
+            <input
+              type="email"
+              placeholder="Your Email.."
+              className="bg-white w-full sm:w-80 h-12 rounded-md pl-4 shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            />
+            <button className="w-full sm:w-auto bg-emerald-800 mt-3 sm:mt-0 text-white font-semibold py-3 px-6 rounded-md shadow-md hover:bg-emerald-700 transition-colors">
+              <span className="md:hidden">Sign up</span>
+              <span className="hidden md:inline">Try it out for free</span>
+            </button>
+          </div>
+          <p className="text-gray-600 mt-5 text-sm">
+            We care about your data in our{" "}
+            <span className="text-emerald-700 underline font-semibold hover:text-emerald-600 cursor-pointer">
+              privacy policy
+            </span>
+            .
+          </p>
         </div>
-        <p className="text-gray-600 mt-5 px-6 text-sm">
-          We care about your data in our{" "}
-          <span className="text-[#12715B] underline font-semibold">
-            privacy policy
-          </span>
-          .
-        </p>
-      </div>
-      {/* ----- Box-2 ----- */}
-      <div className="w-full h-full mt-10  ">
-        <img
-          className="object-cover xl:w-[44rem] justify-self-end 2xl:w-full "
-          src="https://lexend-nextjs.vercel.app/assets/images/template/hero-mockup.png"
-          alt=""
-        />
+
+        {/* ----- Image Section ----- */}
+        <div className="w-full lg:w-1/2 mt-10 xl:mt-0">
+          <img
+            className="w-full md:w-[1000px] object-cover max-w-2xl mx-auto xl:max-w-none"
+            src="https://lexend-nextjs.vercel.app/assets/images/template/hero-mockup.png"
+            alt="Platform mockup"
+          />
+        </div>
       </div>
     </div>
   );
