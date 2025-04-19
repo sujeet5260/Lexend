@@ -4,10 +4,10 @@ import { MdOutlineLayers } from "react-icons/md";
 
 const Pricing = () => {
   return (
-    <div className="  bg-[#0E5A49]  ">
+    <div className="  bg-[#0E5A49]  xl:rounded-2xl ">
       <div className="bg-[#0E5A49] max-w-6xl mx-auto px-4  py-10 font-sans xl:px-0  ">
         <div className="flex flex-col items-center text-center mb-16">
-          <p className="text-white font-bold">pricing</p>
+          <p className="text-white font-bold">pricing.</p>
           <h1 className="text-3xl font-bold my-4 text-white xl:text-5xl">
             Simple, scalable pricing.
           </h1>

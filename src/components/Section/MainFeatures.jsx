@@ -1,8 +1,9 @@
 import React from "react";
 import { BsCloudDownload } from "react-icons/bs";
 import { PiPlayCircle } from "react-icons/pi";
-
-
+import { BsJournalBookmark } from "react-icons/bs";
+import { LuFolderTree } from "react-icons/lu";
+import { IoDiamondOutline } from "react-icons/io5";
 
 export default function MainFeatures() {
   return (
@@ -25,7 +26,7 @@ export default function MainFeatures() {
         </p>
       </div>
 
-      {/* -----------------------------  Dashbord-Box-2 ----------------------------- */}
+      {/* -----------------------------  Dash-board-Box-2 ----------------------------- */}
 
       <div className="[&>*]:mt-16">
         {/* ------- card-1 ----------- */}
@@ -83,7 +84,8 @@ export default function MainFeatures() {
           {/* Left Column: Dashboard Preview */}
           <div className="flex flex-col items-start">
             <div className=" hidden lg:flex w-12 h-12 bg-[#12715B] rounded-lg  items-center justify-center mb-6">
-              <BsCloudDownload className="text-white size-6" />
+             
+              <BsJournalBookmark  className="text-white size-6" />
             </div>
 
             <h2 className=" Graphik text-[1.40rem] pr-10 font-black sm:text-3xl xl:text-4xl ">
@@ -142,7 +144,8 @@ export default function MainFeatures() {
           {/* Right Column: Feature Description */}
           <div className="flex flex-col items-start">
             <div className=" hidden lg:flex w-12 h-12 bg-[#12715B] rounded-lg  items-center justify-center mb-6">
-              <BsCloudDownload className="text-white size-6" />
+              
+              <LuFolderTree className="text-white size-6"/>
             </div>
 
             <h2 className=" Graphik text-[1.39rem]  font-black sm:pr-7 sm:text-3xl xl:text-4xl ">
@@ -182,7 +185,8 @@ export default function MainFeatures() {
           {/* Left Column: Dashboard Preview */}
           <div className="flex flex-col items-start">
             <div className=" hidden lg:flex w-12 h-12 bg-[#12715B] rounded-lg  items-center justify-center mb-6">
-              <BsCloudDownload className="text-white size-6" />
+            
+              <IoDiamondOutline className="text-white size-6" />
             </div>
 
             <h2 className=" Graphik text-[1.39rem] font-black sm:text-3xl md:pr-7 xl:text-4xl ">
@@ -230,7 +234,7 @@ export default function MainFeatures() {
 
       {/* -------- Trial-Card --------- */}
 
-      <div className=" bg-[#F5EEE9] p-8 flex flex-col items-center  rounded-2xl lg:py-15 ">
+      <div className=" bg-[#F5EEE9] p-8 flex flex-col items-center  rounded-2xl lg:py-15  ">
         <h1 className="font-black Graphik text-3xl  text-center lg:text-4xl ">
           Start your 30-days free trail.
         </h1>
@@ -243,7 +247,6 @@ export default function MainFeatures() {
           View demo
         </button>
         <button className="font-black bg-[#12715b] text-white w-65 shadow-md h-12 rounded-lg mt-4 relative flex items-center justify-center gap-2 sm:w-135 lg:w-160">
-          
           Start free trail
         </button>
       </div>
