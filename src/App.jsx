@@ -14,6 +14,7 @@ const App = () => {
       <MainFeatures/>
       <Pricing/>
       
+      
     </div>
   )
 }
